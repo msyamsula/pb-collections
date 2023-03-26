@@ -15,14 +15,13 @@
 syntax = "proto3";
 
 package pb;
-option go_package = "github.com/msyamsula/pb-collections/example";
+option go_package = "github.com/msyamsula/pb-collections/calculator";
 
 // The greeting service definition.
 service Greeter {
   // Sends a greeting
   rpc SayHello (HelloRequest) returns (HelloReply) {}
   rpc Addition (Numbers) returns (Result) {}
-  rpc Multiplication (Numbers) returns (Result) {}
 }
 
 // The request message containing the user's name.
